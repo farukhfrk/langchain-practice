@@ -1,0 +1,36 @@
+# CODEOWNERS file for langchain-practice repository
+# This file specifies who should review PRs for different parts of the codebase
+
+# Default owner for all files in the repository
+* @farukhfrk
+
+# Chains module - core chain examples
+/chains/ @farukhfrk
+
+# Chat Models - LLM provider integrations
+/ChatModels/ @farukhfrk
+
+# Embedding Models - embeddings and semantic search
+/EmbeddingModels/ @farukhfrk
+
+# Runnables - advanced patterns
+/runnables/ @farukhfrk
+
+# Documentation
+/README.md @farukhfrk
+/CONTRIBUTING.md @farukhfrk
+/BRANCH_PROTECTION_RULES.md @farukhfrk
+/GITHUB_PUSH_GUIDE.md @farukhfrk
+
+# Configuration files
+.gitignore @farukhfrk
+requirements.txt @farukhfrk
+.env.example @farukhfrk
+
+# Instructions for team:
+# - All PRs will automatically request review from code owners
+# - At least one code owner must approve before merge
+# - Add more contributors by adding their GitHub username: @username
+#
+# Example for adding a second reviewer:
+# /chains/ @farukhfrk @secondreviewer
