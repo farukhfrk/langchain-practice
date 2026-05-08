@@ -1,22 +1,55 @@
-# langchain core
-langchain
-langchain-core
+# ============================================================================
+# Core LangChain Dependencies
+# ============================================================================
+langchain>=0.1.0
+langchain-core>=0.1.0
+langchain-community>=0.0.1
 
-#  OpenAI Integration
-langchain-OpenAI
-openai
+# ============================================================================
+# LLM Provider Integrations
+# ============================================================================
+# OpenAI Integration
+langchain-openai>=0.0.5
+openai>=1.0.0
 
-#Anthropic Integration
-langchain-Anthropic
+# Anthropic Integration (Optional)
+langchain-anthropic>=0.0.1
 
-#hugging face integration
-langchain-huggingface
-transformers
-huggingface-hub
+# Hugging Face Integration (Optional)
+langchain-huggingface>=0.0.1
+transformers>=4.30.0
+huggingface-hub>=0.16.0
 
-python-dotenv
+# ============================================================================
+# Document Loaders & Data Processing
+# ============================================================================
+# PDF Processing
+pypdf>=3.15.0
 
+# Web Content Extraction
+beautifulsoup4>=4.12.0
+lxml>=4.9.0
 
-# ML utilities
-numpy
-scikit-learn
+# CSV and structured data
+python-csv>=0.0.13
+
+# ============================================================================
+# Utilities & Dependencies
+# ============================================================================
+python-dotenv>=1.0.0
+pydantic>=2.0.0
+
+# ============================================================================
+# ML & Data Science Utilities
+# ============================================================================
+numpy>=1.24.0
+scikit-learn>=1.3.0
+
+# ============================================================================
+# Optional: Development Dependencies
+# ============================================================================
+# Uncomment for development:
+# pytest>=7.4.0
+# black>=23.7.0
+# isort>=5.12.0
+# flake8>=6.1.0

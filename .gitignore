@@ -46,7 +46,7 @@ coverage.xml
 .pytest_cache/
 
 # Jupyter Notebook
-.ipynb_checkpoints
+.ipynb_checkpoints/
 Untitled*.ipynb
 
 # IPython
@@ -63,8 +63,12 @@ celerybeat.pid
 # SageMath parsed files
 *.sage.py
 
-# Environments
+# ============================================================================
+# Environment Variables & Secrets
+# ============================================================================
 .env
+.env.local
+.env.*.local
 .venv
 env/
 venv/
@@ -72,34 +76,61 @@ ENV/
 env.bak/
 venv.bak/
 
-# Spyder project settings
-.spyderproject
-.spyproject
+# ============================================================================
+# IDE & Editor Settings
+# ============================================================================
+.vscode/
+.idea/
+*.code-workspace
+*.swp
+*.swo
+*~
+.DS_Store
+.project
+.pydevproject
+.settings/
 
-# Rope project settings
-.ropeproject
+# ============================================================================
+# Generated Output & Cache
+# ============================================================================
+output/
+*.log
+*.csv
+*.json
+.cache/
+tmp/
+temp/
 
-# mkdocs documentation
-/site
+# ============================================================================
+# Testing
+# ============================================================================
+.pytest_cache/
+.tox/
+htmlcov/
+.coverage
 
-# mypy
+# ============================================================================
+# Documentation
+# ============================================================================
+site/
+docs/_build/
+
+# ============================================================================
+# OS Specific
+# ============================================================================
+Thumbs.db
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Type checking
 .mypy_cache/
 .dmypy.json
 dmypy.json
-
-# Pyre type checker
 .pyre/
 
-# VS Code
-.vscode/
-*.code-workspace
-
-# IDE
-.idea/
-.DS_Store
 
 # Project-specific
 *.log
-output/
 *.tmp
 .env.local
