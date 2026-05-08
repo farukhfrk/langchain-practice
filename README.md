@@ -17,6 +17,7 @@ A comprehensive collection of LangChain examples demonstrating core concepts inc
 
 This repository contains practical examples of LangChain implementations covering:
 
+- **Document Loaders**: Ingesting data from various sources (PDFs, web, CSV, text files)
 - **Chains**: Sequential and parallel composition of prompts and models
 - **Runnables**: Advanced patterns for building complex LLM workflows
 - **Embeddings**: Document embedding and semantic similarity search
@@ -29,6 +30,18 @@ All examples are fully documented with docstrings and inline comments for easy u
 
 ```
 langchain/
+├── document-loaders/                # Data ingestion from multiple sources
+│   ├── __init__.py
+│   ├── README.md                    # Detailed documentation
+│   ├── text_loader.py               # Load plain text files
+│   ├── pypdf_loader.py              # Extract text from PDFs
+│   ├── webbase_loader.py            # Scrape web content
+│   ├── directory_loader.py          # Batch load multiple files
+│   ├── csv_loader.py                # Process CSV data
+│   ├── example.txt                  # Sample text file
+│   ├── example.csv                  # Sample CSV data
+│   └── sample-local-pdf.pdf         # Sample PDF document
+│
 ├── chains/                          # Chain composition examples
 │   ├── __init__.py
 │   ├── simple_chain.py             # Basic prompt -> model -> parser

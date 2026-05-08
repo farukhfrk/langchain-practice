@@ -51,9 +51,15 @@ parser = StrOutputParser()
 # Create parallel chains for both platforms
 # Each chain: prompt -> model -> parser
 # Both chains receive the same input but use different prompts
+# parallel_chain = {
+#     'tweet': RunnableSequence(prompt1, model, parser),      # Generate tweet
+#     'linkedin': RunnableSequence(prompt2, model, parser)    # Generate LinkedIn post
+# }
+
+# LCEL version - using pipe operator
 parallel_chain = RunnableParallel({
-    'tweet': RunnableSequence(prompt1, model, parser),      # Generate tweet
-    'linkedin': RunnableSequence(prompt2, model, parser)    # Generate LinkedIn post
+    'tweet': prompt1 | model | parser,
+    'linkedin': prompt2 | model | parser
 })
 
 # Execute the parallel chain with a topic
